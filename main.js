@@ -97,4 +97,4 @@ function counter() {
   }
 }
 
-setInterval(counter, 1 * 1000);
+setTimeout(counter, 1 * 1000);
