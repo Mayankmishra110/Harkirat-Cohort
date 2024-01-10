@@ -66,3 +66,35 @@ function greetAlien() {
 
 setTimeout(greetAlien, 3 * 1000);
 setTimeout(greet, 4 * 1000);
+
+//Callbacks
+
+function suumm(num1, num2, demoFn) {
+  let resultt = num1 + num2;
+  demoFn(resultt);
+}
+
+function displayResult(data) {
+  console.log("Result for the function is:" + data);
+}
+
+const ans = suumm(2, 4, displayResult);
+
+// console.log(ans);
+
+function maya() {
+  console.log("maya");
+}
+
+setTimeout(maya, 2 * 1000);
+
+// setInterval(maya, 1 * 1000);
+//Create a counter in javascript that counts from 30 to 0
+
+function counter() {
+  for (let i = 30; i >= 0; i--) {
+    console.log(i);
+  }
+}
+
+setInterval(counter, 1 * 1000);
